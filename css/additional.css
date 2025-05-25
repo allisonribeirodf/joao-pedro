@@ -1,0 +1,36 @@
+.practice-content.text-only {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.practice-content.text-only .practice-text {
+  width: 100%;
+}
+
+.hero-section {
+  height: 60vh;
+  min-height: 400px;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.about-text {
+  width: 100%;
+}
+
+.differentials-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+@media (max-width: 768px) {
+  .differentials-grid {
+    grid-template-columns: 1fr;
+  }
+}

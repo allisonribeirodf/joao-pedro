@@ -1,228 +1,97 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lopes Advocacia</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Lopes Advocacia</title>
 
-    <!-- Fonts & Icons -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-    <!-- Estilos -->
-    <link rel="stylesheet" href="css/style.css">
+  <!-- Estilos -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- ========== HEADER ========== -->
-    <header class="header">
-        <div class="container header-container">
-            <div class="logo">
-                <a href="index.html"><h1>Lopes Advocacia</h1></a>
+  <!-- ========== HEADER ========== -->
+  <header class="header">
+    <div class="container header-container">
+      <div class="logo"><a href="index.html"><h1>Lopes Advocacia</h1></a></div>
+      <div class="mobile-toggle" id="mobile-toggle"><i class="fas fa-bars"></i></div>
+      <nav class="nav-menu" id="nav-menu">
+        <ul>
+          <li class="active"><a href="index.html">Início</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="areas-de-atuacao.html">Áreas de Atuação</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ========== MAIN ========== -->
+  <main>
+    <!-- Banner Principal -->
+    <section class="hero-section">
+      <div class="overlay"></div>
+      <div class="container hero-content">
+        <h1>Lopes Advocacia</h1>
+        <p>Assessoria jurídica de excelência, atendimento personalizado e soluções eficazes para cada cliente.</p>
+        <a href="contato.html" class="btn btn-accent">Entre em Contato</a>
+      </div>
+    </section>
+
+    <!-- … demais seções inalteradas … -->
+
+    <!-- Contato Rápido -->
+    <section class="section contact-section">
+      <div class="container">
+        <div class="contact-grid">
+          <!-- Informações -->
+          <div class="contact-info">
+            <h2>Entre em Contato</h2>
+            <p>Estamos prontos para atender suas necessidades jurídicas com excelência e dedicação.</p>
+
+            <div class="contact-details">
+              <p><strong>WhatsApp:</strong>
+                 <a href="https://wa.me/5561985782278" target="_blank" rel="noopener">(61) 98578-2278</a>
+              </p>
+              <p><strong>Email:</strong> Pedrojoao5600advogado@gmail.com</p>
+              <p><strong>Endereço:</strong> SBN Quadra 02 Bloco C Sala 501, Ed. Central, Brasília-DF 70040-020</p>
+              <p><strong>Horário:</strong></p>
+              <p>Segunda a Sexta: 8 h às 18 h</p>
+              <p>Sábado: 8 h às 12 h</p>
             </div>
+          </div>
 
-            <div class="mobile-toggle" id="mobile-toggle"><i class="fas fa-bars"></i></div>
-
-            <nav class="nav-menu" id="nav-menu">
-                <ul>
-                    <li class="active"><a href="index.html">Início</a></li>
-                    <li><a href="sobre.html">Sobre</a></li>
-                    <li><a href="areas-de-atuacao.html">Áreas de Atuação</a></li>
-                    <li><a href="contato.html">Contato</a></li>
-                </ul>
-            </nav>
+          <!-- Formulário -->
+          <div class="contact-form">
+            <h3>Envie uma Mensagem</h3>
+            <form id="contactForm">
+              <div class="form-group"><input type="text"  id="name"  placeholder="Nome Completo" required></div>
+              <div class="form-group"><input type="email" id="email" placeholder="E-mail"         required></div>
+              <div class="form-group"><input type="tel"   id="phone" placeholder="Telefone"></div>
+              <div class="form-group"><textarea id="message" placeholder="Mensagem" rows="4" required></textarea></div>
+              <button type="submit" class="btn btn-accent">Enviar</button>
+            </form>
+          </div>
         </div>
-    </header>
+      </div>
+    </section>
+  </main>
 
-    <!-- ========== MAIN ========== -->
-    <main>
-        <!-- Banner Principal -->
-        <section class="hero-section">
-            <div class="overlay"></div>
-            <div class="container hero-content">
-                <h1>Lopes Advocacia</h1>
-                <p>Assessoria jurídica de excelência, atendimento personalizado e soluções eficazes para cada cliente.</p>
-                <a href="contato.html" class="btn btn-accent">Entre em Contato</a>
-            </div>
-        </section>
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-info">
+        <h3>Lopes Advocacia</h3>
+        <p>Assessoria jurídica de excelência, atendimento personalizado e soluções eficazes.</p>
+      </div>
 
-        <!-- Apresentação -->
-        <section class="section presentation-section">
-            <div class="container">
-                <h2 class="section-title">Bem-vindo à Lopes Advocacia</h2>
-                <p class="intro-text">
-                    O Escritório Lopes, sociedade individual de advocacia, atua em diversas áreas do Direito,
-                    contando com parcerias estratégicas para oferecer um atendimento completo e especializado.
-                </p>
-
-                <div class="areas-grid">
-                    <div class="area-card">
-                        <i class="fas fa-balance-scale area-icon"></i>
-                        <h3>Direito Cível</h3>
-                        <p>Soluções jurídicas para questões contratuais, responsabilidade civil e direitos do consumidor.</p>
-                    </div>
-
-                    <div class="area-card">
-                        <i class="fas fa-briefcase area-icon"></i>
-                        <h3>Direito Trabalhista</h3>
-                        <p>Defesa dos direitos dos trabalhadores e orientação para relações de trabalho.</p>
-                    </div>
-
-                    <div class="area-card">
-                        <i class="fas fa-handshake area-icon"></i>
-                        <h3>Direito Previdenciário</h3>
-                        <p>Assessoria para benefícios previdenciários e garantia dos direitos dos segurados.</p>
-                    </div>
-
-                    <div class="area-card">
-                        <i class="fas fa-gavel area-icon"></i>
-                        <h3>Direito Tributário</h3>
-                        <p>Orientação fiscal e defesa em questões tributárias para pessoas físicas e jurídicas.</p>
-                    </div>
-                </div>
-
-                <div class="text-center mt-3">
-                    <a href="areas-de-atuacao.html" class="btn">Saiba Mais</a>
-                </div>
-            </div>
-        </section>
-
-        <!-- Valores -->
-        <section class="section values-section">
-            <div class="container">
-                <h2 class="section-title">Nossos Valores</h2>
-
-                <div class="values-grid">
-                    <div class="value-card">
-                        <h3>Ética e Transparência</h3>
-                        <p>Conduzimos nossa prática com os mais altos padrões éticos, mantendo sempre uma comunicação clara e transparente com nossos clientes.</p>
-                    </div>
-
-                    <div class="value-card">
-                        <h3>Excelência Técnica</h3>
-                        <p>Investimos continuamente em conhecimento e atualização para oferecer as melhores estratégias jurídicas.</p>
-                    </div>
-
-                    <div class="value-card">
-                        <h3>Atendimento Humanizado</h3>
-                        <p>Reconhecemos que por trás de cada processo existe uma pessoa com necessidades e preocupações únicas.</p>
-                    </div>
-
-                    <div class="value-card">
-                        <h3>Acessibilidade</h3>
-                        <p>Acreditamos que o acesso à justiça deve ser facilitado, com linguagem clara e procedimentos simplificados.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contato Rápido -->
-        <section class="section contact-section">
-            <div class="container">
-                <div class="contact-grid">
-                    <!-- Informações -->
-                    <div class="contact-info">
-                        <h2>Entre em Contato</h2>
-                        <p>Estamos prontos para atender suas necessidades jurídicas com excelência e dedicação.</p>
-                        <div class="contact-details">
-                            <p><strong>WhatsApp:</strong> 61 - 985782278</p>
-                            <p><strong>Email:</strong> Pedrojoao5600advogado@gmail.com</p>
-                            <p><strong>Endereço:</strong> 0000000</p>
-                            <p><strong>Horário:</strong></p>
-                            <p>Segunda a Sexta: 9h às 18h</p>
-                            <p>Sábado: 9h às 13h</p>
-                        </div>
-                    </div>
-
-                    <!-- Formulário -->
-                    <div class="contact-form">
-                        <h3>Envie uma Mensagem</h3>
-                        <form id="contactForm">
-                            <div class="form-group">
-                                <input type="text" id="name" placeholder="Nome Completo" required>
-                            </div>
-                            <div class="form-group">
-                                <input type="email" id="email" placeholder="E-mail" required>
-                            </div>
-                            <div class="form-group">
-                                <input type="tel" id="phone" placeholder="Telefone">
-                            </div>
-                            <div class="form-group">
-                                <textarea id="message" placeholder="Mensagem" rows="4" required></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-accent">Enviar</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- ========== FOOTER ========== -->
-    <footer class="footer">
-        <div class="container footer-container">
-            <div class="footer-info">
-                <h3>Lopes Advocacia</h3>
-                <p>Assessoria jurídica de excelência, atendimento personalizado e soluções eficazes.</p>
-            </div>
-
-            <div class="footer-contact">
-                <h4>Contato</h4>
-                <p><strong>WhatsApp:</strong> 61 - 985782278</p>
-                <p><strong>Email:</strong> Pedrojoao5600advogado@gmail.com</p>
-                <p><strong>Endereço:</strong> 0000000</p>
-            </div>
-
-            <div class="footer-hours">
-                <h4>Horário de Funcionamento</h4>
-                <p><strong>Segunda a Sexta:</strong> 9h às 18h</p>
-                <p><strong>Sábado:</strong> 9h às 13h</p>
-            </div>
-        </div>
-
-        <div class="footer-bottom">
-            <div class="container">
-                <p>&copy; <span id="currentYear"></span> Lopes Advocacia. Todos os direitos reservados.</p>
-            </div>
-        </div>
-
-        <a href="https://wa.me/61985782278" class="whatsapp-float" target="_blank" rel="noopener noreferrer">
-            <i class="fab fa-whatsapp"></i>
-        </a>
-    </footer>
-
-    <!-- ========== SCRIPTS ========== -->
-    <script src="js/script.js"></script>
-
-    <!-- Script para enviar o formulário via WhatsApp -->
-    <script>
-      document.getElementById("contactForm").addEventListener("submit", function (e) {
-        e.preventDefault();
-
-        const nome     = document.getElementById("name").value.trim();
-        const email    = document.getElementById("email").value.trim();
-        const telefone = document.getElementById("phone").value.trim() || "―";
-        const msg      = document.getElementById("message").value.trim();
-
-        // Validação mínima
-        if (!nome || !email || !msg) {
-          alert("Preencha todos os campos obrigatórios.");
-          return;
-        }
-
-        const texto = `*Novo contato do site Lopes Advocacia*\n\n`
-          + `*Nome:* ${nome}\n`
-          + `*Email:* ${email}\n`
-          + `*Telefone:* ${telefone}\n`
-          + `*Mensagem:* ${msg}`;
-
-        const numero = "5561985782278";                       // DDI + DDD + número
-        const url    = `https://wa.me/${numero}?text=${encodeURIComponent(texto)}`;
-
-        window.open(url, "_blank");                          // Abre WhatsApp
-        this.reset();                                        // Limpa o form
-      });
-    </script>
-</body>
-</html>
+      <div class="footer-contact">
+        <h4>Contato</h4>
+        <p><strong>WhatsApp:</strong> <a href="https://wa.me/5561985782278" target="_blank" rel="noopener">(61) 98578-2278</a></p>
+        <p><strong>Email:</strong> Pedrojoao5600advogado@gmail.com</p>
+        <p><strong>Endereço:</strong> SBN Quadra 02

@@ -1,223 +1,190 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <title>Contato – Lopes Advocacia</title>
-
-  <!-- Fonts & Icons -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-  <!-- Estilos -->
-  <link rel="stylesheet" href="css/style.css">
-
-  <!-- Links de telefone visíveis em todo o rodapé e bloco de contato -->
-  <style>
-    .footer-contact a,
-    .footer-contact a:visited,
-    .contact-info-card a,
-    .contact-info-card a:visited {
-      color:#F0C75E;                 /* dourado dos títulos */
-      text-decoration:none;
-    }
-    .footer-contact a:hover,
-    .contact-info-card a:hover,
-    .footer-contact a:focus,
-    .contact-info-card a:focus {
-      color:#FAD983;
-      text-decoration:underline;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Lopes Advocacia</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <!-- ========== HEADER ========== -->
-  <header class="header">
-    <div class="container header-container">
-      <div class="logo"><a href="index.html"><h1>Lopes Advocacia</h1></a></div>
-      <div class="mobile-toggle" id="mobile-toggle"><i class="fas fa-bars"></i></div>
-      <nav class="nav-menu" id="nav-menu">
-        <ul>
-          <li><a href="index.html">Início</a></li>
-          <li><a href="sobre.html">Sobre</a></li>
-          <li><a href="areas-de-atuacao.html">Áreas de Atuação</a></li>
-          <li class="active"><a href="contato.html">Contato</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <!-- ========== MAIN ========== -->
-  <main>
-    <!-- Banner -->
-    <section class="page-banner">
-      <div class="overlay"></div>
-      <h1>Contato</h1>
-    </section>
-
-    <!-- Contato -->
-    <section class="section contact-page-section">
-      <div class="container">
-        <h2 class="section-title">Entre em Contato</h2>
-        <p class="intro-text">
-          Estamos à disposição para atender suas necessidades jurídicas. Entre em contato conosco
-          para agendar uma consulta ou obter mais informações sobre nossos serviços.
-        </p>
-
-        <div class="contact-page-grid">
-          <!-- Informações -->
-          <div class="contact-info-card">
-            <div class="contact-info-content">
-              <h3>Informações de Contato</h3>
-
-              <div class="contact-item">
-                <i class="fas fa-phone-alt"></i>
-                <div>
-                  <h4>Telefone/WhatsApp</h4>
-                  <p><a href="https://wa.me/5561985782278" target="_blank" rel="noopener">(61) 98578-2278</a></p>
-                </div>
-              </div>
-
-              <div class="contact-item">
-                <i class="fas fa-envelope"></i>
-                <div>
-                  <h4>E-mail</h4>
-                  <p>Pedrojoao5600advogado@gmail.com</p>
-                </div>
-              </div>
-
-              <div class="contact-item">
-                <i class="fas fa-map-marker-alt"></i>
-                <div>
-                  <h4>Endereço</h4>
-                  <p>SBN Quadra 02 Bloco C Sala 501,<br>Ed. Central, Brasília-DF 70040-020</p>
-                </div>
-              </div>
-
-              <div class="contact-item">
-                <i class="fas fa-clock"></i>
-                <div>
-                  <h4>Horário de Atendimento</h4>
-                  <p>Segunda a Sexta: 8 h às 18 h</p>
-                  <p>Sábado: 8 h às 12 h</p>
-                </div>
-              </div>
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <h1>Lopes Advocacia</h1>
+                </a>
             </div>
-          </div>
-
-          <!-- Formulário -->
-          <div class="contact-form-card">
-            <h3>Envie uma Mensagem</h3>
-            <form id="contactPageForm">
-              <div class="form-group">
-                <label for="name">Nome Completo</label>
-                <input type="text" id="name" placeholder="Seu nome completo" required>
-              </div>
-              <div class="form-group">
-                <label for="email">E-mail</label>
-                <input type="email" id="email" placeholder="Seu e-mail" required>
-              </div>
-              <div class="form-group">
-                <label for="phone">Telefone</label>
-                <input type="tel" id="phone" placeholder="Seu telefone">
-              </div>
-              <div class="form-group">
-                <label for="subject">Assunto</label>
-                <select id="subject" required>
-                  <option value="" disabled selected>Selecione o assunto</option>
-                  <option value="Direito Cível">Direito Cível</option>
-                  <option value="Direito Trabalhista">Direito Trabalhista</option>
-                  <option value="Direito Previdenciário">Direito Previdenciário</option>
-                  <option value="Direito Tributário">Direito Tributário</option>
-                  <option value="Outro">Outro</option>
-                </select>
-              </div>
-              <div class="form-group">
-                <label for="message">Mensagem</label>
-                <textarea id="message" rows="5" placeholder="Descreva sua necessidade" required></textarea>
-              </div>
-              <button type="submit" class="btn btn-accent">Enviar Mensagem</button>
-            </form>
-          </div>
+            <div class="mobile-toggle" id="mobile-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <nav class="nav-menu" id="nav-menu">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="areas-de-atuacao.html">Áreas de Atuação</a></li>
+                    <li class="active"><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
         </div>
-      </div>
-    </section>
+    </header>
 
-    <!-- Localização -->
-    <section class="section map-section">
-      <div class="container">
-        <h2 class="section-title">Nossa Localização</h2>
-        <div class="map-container">
-          <iframe
-            src="https://www.google.com/maps?q=SBN+Quadra+02+Bloco+C+Bras%C3%ADlia&output=embed"
-            width="100%" height="300" style="border:0;" allowfullscreen loading="lazy">
-          </iframe>
+    <main>
+        <section class="page-banner">
+            <div class="overlay"></div>
+            <h1>Contato</h1>
+        </section>
+
+        <section class="section contact-page-section">
+            <div class="container">
+                <h2 class="section-title">Entre em Contato</h2>
+                <p class="intro-text">
+                    Estamos à disposição para atender suas necessidades jurídicas. Entre em contato conosco 
+                    para agendar uma consulta ou obter mais informações sobre nossos serviços.
+                </p>
+                
+                <div class="contact-page-grid">
+                    <div class="contact-info-card">
+                        <div class="contact-info-content">
+                            <h3>Informações de Contato</h3>
+                            <div class="contact-item">
+                                <i class="fas fa-phone-alt"></i>
+                                <div>
+                                    <h4>Telefone/WhatsApp</h4>
+                                    <p>618888333</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <div>
+                                    <h4>E-mail</h4>
+                                    <p>Pedrojoao5600advogado@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <h4>Endereço</h4>
+                                    <p>0000000</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-clock"></i>
+                                <div>
+                                    <h4>Horário de Atendimento</h4>
+                                    <p>Segunda a Sexta: 9h às 18h</p>
+                                    <p>Sábado: 9h às 13h</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form-card">
+                        <h3>Envie uma Mensagem</h3>
+                        <form id="contactPageForm">
+                            <div class="form-group">
+                                <label for="name">Nome Completo</label>
+                                <input type="text" id="name" placeholder="Seu nome completo" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">E-mail</label>
+                                <input type="email" id="email" placeholder="Seu e-mail" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Telefone</label>
+                                <input type="tel" id="phone" placeholder="Seu telefone">
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Assunto</label>
+                                <select id="subject" required>
+                                    <option value="" disabled selected>Selecione o assunto</option>
+                                    <option value="Direito Cível">Direito Cível</option>
+                                    <option value="Direito Trabalhista">Direito Trabalhista</option>
+                                    <option value="Direito Previdenciário">Direito Previdenciário</option>
+                                    <option value="Direito Tributário">Direito Tributário</option>
+                                    <option value="Outro">Outro</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Mensagem</label>
+                                <textarea id="message" rows="5" placeholder="Descreva sua necessidade" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-accent">Enviar Mensagem</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section map-section">
+            <div class="container">
+                <h2 class="section-title">Nossa Localização</h2>
+                <div class="map-container">
+                    <iframe 
+                        src="https://www.google.com/maps?q=Esplanada+dos+Ministérios,+Brasília+-+DF&output=embed"
+                        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+                    </iframe>
+                </div>
+               
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-info">
+                <h3>Lopes Advocacia</h3>
+                <p>Assessoria jurídica de excelência, atendimento personalizado e soluções eficazes.</p>
+            </div>
+            <div class="footer-contact">
+                <h4>Contato</h4>
+                <p><strong>WhatsApp:</strong> 61 - 985782278</p>
+                <p><strong>Email:</strong> Pedrojoao5600advogado@gmail.com</p>
+                <p><strong>Endereço:</strong> 0000000</p>
+            </div>
+            <div class="footer-hours">
+                <h4>Horário de Funcionamento</h4>
+                <p><strong>Segunda a Sexta:</strong> 9h às 18h</p>
+                <p><strong>Sábado:</strong> 9h às 13h</p>
+            </div>
         </div>
-      </div>
-    </section>
-  </main>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; <span id="currentYear"></span> Lopes Advocacia. Todos os direitos reservados.</p>
+            </div>
+        </div>
+        <a href="https://wa.me/5561985782278" class="whatsapp-float" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </footer>
 
-  <!-- ========== FOOTER ========== -->
-  <footer class="footer">
-    <div class="container footer-container">
-      <div class="footer-info">
-        <h3>Lopes Advocacia</h3>
-        <p>Assessoria jurídica de excelência, atendimento personalizado e soluções eficazes.</p>
-      </div>
+    <script>
+        document.getElementById("contactPageForm").addEventListener("submit", function (event) {
+            event.preventDefault();
 
-      <div class="footer-contact">
-        <h4>Contato</h4>
-        <p><strong>WhatsApp:</strong> <a href="https://wa.me/5561985782278" target="_blank" rel="noopener">(61) 98578-2278</a></p>
-        <p><strong>Email:</strong> Pedrojoao5600advogado@gmail.com</p>
-        <p><strong>Endereço:</strong> SBN Quadra 02 Bloco C Sala 501, Ed. Central, Brasília-DF 70040-020</p>
-      </div>
+            const nome = document.getElementById("name").value;
+            const email = document.getElementById("email").value;
+            const telefone = document.getElementById("phone").value;
+            const assunto = document.getElementById("subject").value;
+            const mensagem = document.getElementById("message").value;
 
-      <div class="footer-hours">
-        <h4>Horário de Funcionamento</h4>
-        <p><strong>Segunda a Sexta:</strong> 8 h às 18 h</p>
-        <p><strong>Sábado:</strong> 8 h às 12 h</p>
-      </div>
-    </div>
+            const texto = `*Novo contato do site Lopes Advocacia:*\n\n` +
+                `*Nome:* ${nome}\n` +
+                `*Email:* ${email}\n` +
+                `*Telefone:* ${telefone}\n` +
+                `*Assunto:* ${assunto}\n` +
+                `*Mensagem:* ${mensagem}`;
 
-    <div class="footer-bottom"><div class="container"><p>&copy; <span id="currentYear"></span> Lopes Advocacia. Todos os direitos reservados.</p></div></div>
+            const numero = "5561985782278"; // SEeeu número com DDI e DDD
+            const url = `https://wa.me/${numero}?text=${encodeURIComponent(texto)}`;
 
-    <!-- Ícone flutuante -->
-    <a href="https://wa.me/5561985782278" class="whatsapp-float" target="_blank" rel="noopener">
-      <i class="fab fa-whatsapp"></i>
-    </a>
-  </footer>
+            window.open(url, "_blank");
+        });
+    </script>
 
-  <!-- ========== SCRIPTS ========== -->
-  <script>
-    document.getElementById("contactPageForm").addEventListener("submit", e => {
-      e.preventDefault();
-
-      const nome     = document.getElementById("name").value.trim();
-      const email    = document.getElementById("email").value.trim();
-      const foneRaw  = document.getElementById("phone").value.replace(/\D/g,"");
-      const foneFmt  = foneRaw ? `(61) ${foneRaw}` : "(61) ―";
-      const assunto  = document.getElementById("subject").value;
-      const mensagem = document.getElementById("message").value.trim();
-
-      if (!nome || !email || !assunto || !mensagem) {
-        alert("Preencha todos os campos obrigatórios.");
-        return;
-      }
-
-      const texto  = `*Novo contato do site Lopes Advocacia*\n\n`
-                   + `*Nome:* ${nome}\n*Email:* ${email}\n*Telefone:* ${foneFmt}\n`
-                   + `*Assunto:* ${assunto}\n*Mensagem:* ${mensagem}`;
-
-      const numero = "5561985782278";                       // DDI + DDD + número
-      const url    = `https://wa.me/${numero}?text=${encodeURIComponent(texto)}`;
-
-      window.open(url, "_blank");
-      e.target.reset();
-    });
-  </script>
-
-  <script src="js/script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

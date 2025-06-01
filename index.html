@@ -43,7 +43,7 @@
       </div>
     </section>
 
-    <!-- … demais seções inalteradas … -->
+    <!-- … outras seções permanecem iguais … -->
 
     <!-- Contato Rápido -->
     <section class="section contact-section">
@@ -72,7 +72,7 @@
             <form id="contactForm">
               <div class="form-group"><input type="text"  id="name"  placeholder="Nome Completo" required></div>
               <div class="form-group"><input type="email" id="email" placeholder="E-mail"         required></div>
-              <div class="form-group"><input type="tel"   id="phone" placeholder="Telefone"></div>
+              <div class="form-group"><input type="tel"   id="phone" placeholder="Telefone (opcional)"></div>
               <div class="form-group"><textarea id="message" placeholder="Mensagem" rows="4" required></textarea></div>
               <button type="submit" class="btn btn-accent">Enviar</button>
             </form>
@@ -94,4 +94,46 @@
         <h4>Contato</h4>
         <p><strong>WhatsApp:</strong> <a href="https://wa.me/5561985782278" target="_blank" rel="noopener">(61) 98578-2278</a></p>
         <p><strong>Email:</strong> Pedrojoao5600advogado@gmail.com</p>
-        <p><strong>Endereço:</strong> SBN Quadra 02
+        <p><strong>Endereço:</strong> SBN Quadra 02 Bloco C Sala 501, Ed. Central, Brasília-DF 70040-020</p>
+      </div>
+
+      <div class="footer-hours">
+        <h4>Horário de Funcionamento</h4>
+        <p><strong>Segunda a Sexta:</strong> 8 h às 18 h</p>
+        <p><strong>Sábado:</strong> 8 h às 12 h</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom"><div class="container"><p>&copy; <span id="currentYear"></span> Lopes Advocacia. Todos os direitos reservados.</p></div></div>
+
+    <!-- Ícone flutuante -->
+    <a href="https://wa.me/5561985782278" class="whatsapp-float" target="_blank" rel="noopener">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+  </footer>
+
+  <!-- ========== SCRIPTS ========== -->
+  <script src="js/script.js"></script>
+
+  <!-- Envio para WhatsApp -->
+  <script>
+    document.getElementById("contactForm").addEventListener("submit", e => {
+      e.preventDefault();
+      const nome  = document.getElementById("name" ).value.trim();
+      const email = document.getElementById("email").value.trim();
+      const foneRaw = document.getElementById("phone").value.replace(/\D/g,""); // só dígitos
+      const foneFmt = foneRaw ? `(61) ${foneRaw}` : "(61) ―";
+      const texto = document.getElementById("message").value.trim();
+
+      if (!nome || !email || !texto) { alert("Preencha todos os campos obrigatórios."); return; }
+
+      const msg  = `*Novo contato do site Lopes Advocacia*\n\n`
+                 + `*Nome:* ${nome}\n*Email:* ${email}\n*Telefone:* ${foneFmt}\n*Mensagem:* ${texto}`;
+      const url  = "https://wa.me/5561985782278?text=" + encodeURIComponent(msg);
+
+      window.open(url, "_blank");
+      e.target.reset();
+    });
+  </script>
+</body>
+</html>
